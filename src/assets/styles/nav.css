@@ -1,0 +1,42 @@
+@import './root.css';
+/* fill="var(--contr_base)" */
+/* fill="var(--base)" */
+/*  fill="var(--accent)" */
+.nav_list{
+    display: flex;
+    gap: 32px; color: var(--contr_base);
+}
+.nav_list_cont{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav{
+    margin: 32px;
+    margin-top: 0;
+    padding-top: 32px;
+    
+}
+.nav_buttons{
+    display: flex;
+    gap: 50px;
+}
+.nav_buttons *{
+   border: none;
+   background: none;
+}
+.nav_content{
+    display: flex;
+    justify-content: space-between;
+}
+.resume{
+    border-radius: 4px;
+padding: 16px 20px;
+width: 153px;
+height: 56px;
+background: var(--contr_base);
+color: var(--base)!important;
+display: flex;justify-content: center;
+gap: 10px;
+align-items: center;
+}

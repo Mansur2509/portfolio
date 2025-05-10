@@ -1,0 +1,56 @@
+
+:root {
+    --base: #ffffff;
+    --contr_base: #000000;
+    --accent: #27272A;
+}
+
+[data-theme='dark'] {
+    --base: #000;
+    --contr_base: #fff;
+    --accent: #27272A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sora';
+    transition: .5s;
+}
+
+@font-face {
+    font-family: 'sora';
+    src: url('../fonts/Sora-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.app {
+    background-color: var(--base);
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: url('../icon/Vector3.svg'), auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
