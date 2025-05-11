@@ -1,0 +1,79 @@
+.header h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    color: var( --contr_base);
+    width: 510px;
+height: fit-content;
+text-wrap: wrap;
+line-height: 1.5;
+}
+.bold{
+    font-weight: 1000;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    color: var( --contr_base);
+}
+.transperent{
+    font-weight: 800;
+    width: 300px;
+    margin-left: 0.2em;
+    font-size: 48px;
+    color: var( --base);
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    -webkit-text-stroke: 6px transparent;
+    background: var( --contr_base); 
+  background-clip: text; 
+  -webkit-text-stroke: 6px transparent;
+}
+.header p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.02em;
+color: var( --accent_text   );
+width: 600px;
+height: 192px;
+margin-top: 32px;
+}
+.header{
+    display: flex;
+}
+.header_content{
+    margin-right: -245px;
+    margin-top: 62px;
+    margin-left: 32px;
+}
+.header ul{
+ display: flex;
+gap:  32px;
+margin-top: 46px;
+}
+.header li{
+    display: flex;
+    border: 3px solid var(--contr_base) ;
+border-radius: 4px;
+padding: 16px;
+width: 56px;
+height: 56px;
+}
+
+#li-1:hover{
+fill:rgb(0, 153, 255);
+
+}
+#li-3:hover{
+    fill:rgb(39, 39, 39);
+transition: 0.1  !important;
+}
+.li-2:hover .li-child {
+    fill:#ee2a7b;
+    transition: 0.1  !important;
+  }
+#li-4:last-child:hover{
+    transition: 0.1  !important;
+    fill: #F9CE34;
+}

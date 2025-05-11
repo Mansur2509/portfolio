@@ -1,14 +1,19 @@
 
+/* fill="var(--contr_base)" */
+/* fill="var(--base)" */
+/*  fill="var(--accent)" */
 :root {
     --base: #ffffff;
     --contr_base: #000000;
     --accent: #27272A;
+    --accent_text: #27272A;
 }
 
 [data-theme='dark'] {
     --base: #000;
     --contr_base: #fff;
     --accent: #27272A;
+    --accent_text: #fff;
 }
 
 * {
@@ -43,11 +48,12 @@ a {
 
 .app {
     background-color: var(--base);
-    width: 1440px;
+    width:100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    cursor: url('../icon/Vector3.svg'), auto;
+    align-items: center;
+    /* cursor: url('../icon/Vector10.svg'), auto; */
 }
 
 body {

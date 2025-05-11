@@ -15,7 +15,7 @@
     margin: 32px;
     margin-top: 0;
     padding-top: 32px;
-    
+    top: 0;
 }
 .nav_buttons{
     display: flex;
