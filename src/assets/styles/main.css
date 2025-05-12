@@ -1,8 +1,127 @@
 @import './root.css';
 
-.link:hover .child{
-fill:  #f7500e;
+.link:hover .child {
+    fill: #f7500e;
 }
-.app1{
+
+.app1 {
     background-color: #f7500e;
+}
+
+.skills_svg1:hover .skills_svg1_child {
+    fill: #f7500e;
+}
+
+.skills_svg21_child {
+    z-index: -100000;
+}
+
+.skills_svg3:hover .skills_svgp_child {
+    fill: rgb(14, 200, 247);
+}
+
+
+.skills_svg2:hover .skills_svg2_child {
+    fill: rgb(247, 204, 14);
+}
+
+.skills_svg3:hover .skills_svg3_child {
+    stroke: rgb(14, 200, 247);
+
+}
+
+.skills_svg4:hover .skills_svg4_child {
+    fill: rgb(14, 88, 247);
+}
+
+.skills_svg5:hover .skills_svg5_child {
+    fill: rgb(14, 96, 247);
+}
+
+.skills_svg6:hover .skills_svg6_child {
+    fill: rgb(54, 54, 54);
+}
+
+.skills_svg7:hover .skills_svg7_child {
+    fill: #f7500e;
+}
+
+.skills_svg8:hover .skills_svg8_child {
+    fill: rgb(123, 14, 247);
+}
+
+.skills_svg9:hover .skills_svg9_child {
+    fill: rgb(247, 14, 14);
+}
+
+.skills_svg10:hover .skills_svg10_child {
+    fill: rgba(202, 30, 165, 0.89);
+}
+
+.Po section {
+    border: 2px solid var(--contr_base);
+    border-radius: 4px;
+    padding: 24px;
+    width: 186px;
+    height: 186px;
+    padding: 24 37;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill_parag {
+    color: var(--contr_base);
+}
+
+.skills_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 71px;
+    grid-row-gap: 40px;
+}
+
+.h222 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    color: var(--contr_base);
+    margin-bottom: 60px;
+}
+
+.h222 span {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    color: var(--contr_base);
+    margin-bottom: 60px;
+}
+
+.skills {
+    width: 1440px;
+    height: 728px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutMe {
+    width: 1440px;
+    height: 692px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.AboutMe p{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--contr_base);
+}
+.AboutMeSvg{
+  margin-top: 60px ;
 }

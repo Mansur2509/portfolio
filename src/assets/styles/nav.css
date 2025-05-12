@@ -1,42 +1,71 @@
 @import './root.css';
+
 /* fill="var(--contr_base)" */
 /* fill="var(--base)" */
 /*  fill="var(--accent)" */
-.nav_list{
+.nav_list {
     display: flex;
-    gap: 32px; color: var(--contr_base);
+    gap: 32px;
+    color: var(--contr_base);
 }
-.nav_list_cont{
+
+.nav_list_cont {
     display: flex;
     align-items: center;
     gap: 32px;
 }
-.nav{
+
+.nav {
     margin: 32px;
     margin-top: 0;
     padding-top: 32px;
     top: 0;
 }
-.nav_buttons{
+
+.nav_buttons {
     display: flex;
     gap: 50px;
 }
-.nav_buttons *{
-   border: none;
-   background: none;
+
+.nav_buttons * {
+    border: none;
+    background: none;
 }
-.nav_content{
+
+.nav_content {
     display: flex;
     justify-content: space-between;
 }
-.resume{
+
+.resume {
     border-radius: 4px;
-padding: 16px 20px;
-width: 153px;
-height: 56px;
-background: var(--contr_base);
-color: var(--base)!important;
-display: flex;justify-content: center;
-gap: 10px;
-align-items: center;
+    padding: 16px 20px;
+    width: 153px;
+    height: 56px;
+    background: var(--contr_base);
+    color: var(--base) !important;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#w1.show {
+    pointer-events: auto;
+}
+
+#w2.show {
+    pointer-events: auto;
+}
+
+#w3.show {
+    pointer-events: auto;
+}
+
+#w4.show {
+    pointer-events: auto;
+}
+
+#w5.show {
+    pointer-events: auto;
 }

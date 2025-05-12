@@ -24,11 +24,38 @@ const Nav = ({ DownloadPDF }) => {
             />
           </svg>
           <ul className="nav_list">
-            <li id="1">Personal</li>
-            <li id="2">About Me</li>
-            <li id="3">Skills</li>
-            <li id="4">Project</li>
-            <li id="5">Contact me</li>
+            <li
+              id="w1"
+              onClick={() => {
+                window.scrollTo({ top: 100, behavior: "smooth" })
+              }}
+            >
+              Personal
+            </li>
+            <li
+              id="w2"
+              onClick={()=>{window.scrollTo({ top: 720, behavior: "smooth" }),console.log('ss');}}
+            >
+              Skills
+            </li>
+            <li
+              id="w3"
+              onClick={window.scrollTo({ top: 1440, behavior: "smooth" })}
+            >
+              About me
+            </li>
+            <li
+              id="w4"
+              onClick={window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              Projects
+            </li>
+            <li
+              id="w5"
+              onClick={window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              Contact me
+            </li>
           </ul>
         </div>
         <div className="nav_buttons">

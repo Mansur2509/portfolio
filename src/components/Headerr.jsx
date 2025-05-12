@@ -90,6 +90,7 @@ const Header = () => {
         viewBox="0 0 889 596"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="ppp"
       >
         <g clip-path="url(#clip0_181_1068)">
           <path
