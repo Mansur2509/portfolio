@@ -10,11 +10,12 @@ const AboutMe = () => {
       }
       moveItems = (e) => {
         const maxOffset = 5;
-
+// console.log((window.innerHeight - e.pageY + 440));
+// console.log(window.innerHeight);
         this.guy_face.forEach((el) => {
           const speed = parseFloat(el.getAttribute("dataSpeed")) || 1;
           let X = -(1440 - e.pageX * speed) / 50;
-          let Y = -((window.innerHeight - e.pageY + 364) * speed) / 100;
+          let Y = -((window.innerHeight - e.pageY + 700) * speed) / 100;
           X = Math.max(-maxOffset, Math.min(X, maxOffset));
           Y = Math.max(-maxOffset, Math.min(Y, maxOffset));
           el.style.transform = `translate(${X}px, ${Y}px)`;
@@ -234,7 +235,7 @@ const AboutMe = () => {
       </svg>
       <article>
         <h2 className="h222">
-          About<span>   Me</span>
+          About<span> Me</span>
         </h2>
         <p>
           I am a student at Proweb. My passion is creating user-friendly

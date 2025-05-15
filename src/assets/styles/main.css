@@ -8,56 +8,109 @@
     background-color: #f7500e;
 }
 
-.skills_svg1:hover .skills_svg1_child {
+.skill_sample1:hover .skills_svg1_child {
     fill: #f7500e;
 }
 
+
+.skill_sample1:hover .skill_parag1{
+    color:#f7500e;
+
+}
 .skills_svg21_child {
     z-index: -100000;
 }
 
-.skills_svg3:hover .skills_svgp_child {
+.skill_sample3:hover .skills_svgp_child {
     fill: rgb(14, 200, 247);
 }
 
+
+.skill_sample3:hover .skill_parag3{
+    color:  rgb(14, 200, 247);
+
+}
 
 .skills_svg2:hover .skills_svg2_child {
     fill: rgb(247, 204, 14);
 }
 
-.skills_svg3:hover .skills_svg3_child {
+
+.skill_sample2:hover .skill_parag2{
+    color:rgb(247, 204, 14);
+
+}
+.skill_sample3:hover .skills_svg3_child {
     stroke: rgb(14, 200, 247);
+    color:rgb(14, 200, 247);
+
+}
+.skill_sample1:hover .skill_parag{
+    color: rgb(0, 81, 254);
+}
+.skill_sample4:hover .skills_svg4_child {
+    fill: rgb(0, 81, 254);
+}
+
+.skill_sample4:hover .skill_parag4{
+    color:rgb(0, 81, 254);
 
 }
 
-.skills_svg4:hover .skills_svg4_child {
-    fill: rgb(14, 88, 247);
-}
-
-.skills_svg5:hover .skills_svg5_child {
+.skill_sample5:hover .skills_svg5_child {
     fill: rgb(14, 96, 247);
 }
 
-.skills_svg6:hover .skills_svg6_child {
+
+.skill_sample5:hover .skill_parag5{
+    color:rgb(14, 96, 247);
+
+}
+.skill_sample6:hover .skills_svg6_child {
     fill: rgb(54, 54, 54);
 }
 
-.skills_svg7:hover .skills_svg7_child {
+
+.skill_sample6:hover .skill_parag6{
+    color:rgb(54, 54, 54);
+
+}
+.skill_sample7:hover .skills_svg7_child {
     fill: #f7500e;
 }
 
-.skills_svg8:hover .skills_svg8_child {
+
+.skill_sample7:hover .skill_parag7{
+    color:#f7500e;
+
+}
+.skill_sample8:hover .skills_svg8_child {
     fill: rgb(123, 14, 247);
 }
 
-.skills_svg9:hover .skills_svg9_child {
+
+.skill_sample8:hover .skill_parag8{
+    color:rgb(123, 14, 247);
+
+}
+.skill_sample9:hover .skills_svg9_child {
     fill: rgb(247, 14, 14);
 }
 
-.skills_svg10:hover .skills_svg10_child {
+
+.skill_sample9:hover .skill_parag9{
+    color:rgb(247, 14, 14);
+
+}
+.skill_sample10:hover .skills_svg10_child {
     fill: rgba(202, 30, 165, 0.89);
 }
 
+
+.skill_sample10:hover .skill_parag10{
+    color:rgba(202, 30, 165, 0.89);
+
+}
 .Po section {
     border: 2px solid var(--contr_base);
     border-radius: 4px;
@@ -72,7 +125,7 @@
     align-items: center;
 }
 
-.skill_parag {
+.Po p{
     color: var(--contr_base);
 }
 

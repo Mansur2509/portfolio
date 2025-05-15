@@ -6,7 +6,8 @@ import Testimoal from "./Testimoal";
 const Main = () => {
 return (
     <main className="main">
-    <Skill/> <AboutMe/>
+    <Skill/>
+     <AboutMe/>
     <MyProject/>
     <Testimoal/>
     </main>
