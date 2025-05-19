@@ -1,0 +1,39 @@
+.MyProjectMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--contr_base);
+}
+.MyProjectMain *{
+    color: var(--base);
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+}
+
+.Sample_Content {
+    max-width: 582px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: fit-content;
+}
+
+.Sample_Content button{
+ height: fit-content;
+ width: fit-content;
+ border: none;
+ background: none;
+}
+.SSS{
+    margin: 220px 0;
+}
