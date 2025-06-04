@@ -3,7 +3,8 @@ import Project from "../samples/ProjectSample";
 import { useState } from "react";
 
 const MyProject = () => {
-  const [side, setSide] = useState(false);
+  const [count, setCount] = useState(3);
+
   const ProjectList = [
     {
       id: 1,
@@ -48,20 +49,10 @@ const MyProject = () => {
       text: "My first project which was made myself at 14 years old at the begging of my education",
     },
   ];
-  // const F = () => {
-  //   count + 3;
-  //   console.log(count);
-  // };
-  // array1.map((el) => console.log(el.text));
-  // const map1 = array1.map((x = count) => x);
 
   return (
     <section className="MyProjectMain container">
-      <h2>
-        My <span>Projects</span>
-      </h2>
-
-      {ProjectList.map((el) => (
+      {ProjectList.slice(0, count).map((el) => (
         <Project
           key={el.id}
           position={el.position}
@@ -70,7 +61,44 @@ const MyProject = () => {
           text={el.text}
         />
       ))}
-      <button onClick={console.log("p")}>dddd</button>
+
+      <button
+        className="project_button"
+        onClick={() =>
+          setCount((prev) => Math.min(prev + 3, ProjectList.length))
+        }
+      >
+        More
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.8333 9.16658L17.6667 2.33325"
+            stroke="var(--base)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18.3333 5.66675V1.66675H14.3333"
+            stroke="var(--base)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.16667 1.66675H7.5C3.33333 1.66675 1.66667 3.33341 1.66667 7.50008V12.5001C1.66667 16.6667 3.33333 18.3334 7.5 18.3334H12.5C16.6667 18.3334 18.3333 16.6667 18.3333 12.5001V10.8334"
+            stroke="var(--base)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </section>
   );
 };

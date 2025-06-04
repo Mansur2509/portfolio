@@ -53,10 +53,54 @@ a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* cursor: url('../icon/Vector10.svg'), auto; */
+    cursor: url('../icon/Vector10.svg'), auto;
 }
 
 body {
     display: flex;
     justify-content: center;
+}
+@media (max-width:576px){
+.nav_list{
+    display: none;
+}
+.nav{
+    min-width: 576px;
+}
+.skills_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 71px;
+    grid-row-gap: 40px;
+    max-width:576px;
+    height: 1000px;
+}
+body{
+height: 10000px;
+}
+body>section{
+    max-width: 576px;
+    width: fit-content;
+}
+body>div{
+    max-width: 576px;
+    width: fit-content;
+}
+body>main{
+    max-width: 576px;
+    width: fit-content;
+}
+body>header{
+    max-width: 576px;
+    width: fit-content;
+}
+.main{ }
+.skills{
+    max-width: 576px;
+    width: fit-content;
+}
+.header_content{
+    margin: 61px 24px;
+}
 }

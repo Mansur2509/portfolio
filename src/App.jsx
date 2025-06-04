@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import "./assets/styles/root.css";
 import Nav from "./components/NavBar";
 import Header from "./components/Headerr";
@@ -8,23 +8,25 @@ import Main from "./components/main/Main";
 
 const App = () => {
 
-  //TODO useEffect(() => {
-  //     mousechange();
-  //   }, []); 
-  //   const mousechange = () => {
-  //     const appElement = document.querySelector(".app");
+   useEffect(() => {
+      mousechange();
+    }, []); 
+    const mousechange = () => {
+      const appElement = document.querySelector(".app");
 
-  //     let count = 0;
+      let count = 0;
 
-  //     window.addEventListener("click", () => {
-  //       console.log(appElement);
-  //       count < 13 ? count++ : (count = 1);
-  //       console.log(count);
-  //       const urlWay = `../icon/Vector${count}.svg`;
-  //       console.log(urlWay);
-  //       appElement.style.cursor = `url('${urlWay}'), help`;
-  //     });
-  //   };
+      window.addEventListener("click", () => {
+        console.log(appElement);
+        count < 13 ? count++ : (count = 1);
+        console.log(count);
+        const urlWay = `../icon/Vector${count}.svg`;
+        console.log(urlWay);
+        appElement.style.cursor = `url('${urlWay}'), help`;
+        console.log(appElement.style.cursor = `url('${urlWay}'), help`)
+        console.log(appElement.style.cursor);
+      });
+    };
   const contentRef = useRef();
   const DownloadPDF = async () => {
     const element = contentRef.current;
