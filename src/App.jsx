@@ -5,6 +5,7 @@ import Header from "./components/Headerr";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import Main from "./components/main/Main";
+import Footer from "./components/Footer";
 
 const App = () => {
 
@@ -47,6 +48,7 @@ const App = () => {
       <Nav DownloadPDF={DownloadPDF} />
       <Header />
       <Main/>
+      <Footer/>
     </div>
   );
 };

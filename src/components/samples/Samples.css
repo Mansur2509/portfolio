@@ -1,18 +1,46 @@
 .MyProjectMain {
     display: flex;
     justify-content: center;
+    width: 100vw;
     align-items: center;
     flex-direction: column;
     position: relative;
     background-color: var(--contr_base);
 }
-.MyProjectMain *{
-    color: var(--base);
-}
 
+.MyProjectMain * {
+    color: var(--base);
+   
+    
+}
+.s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.d{
+    position: relative;
+
+}
+.SSS img {
+    border-radius: 10px;
+    border-bottom: 100px;
+    width: 589px;
+    height: 320px;
+    border-color: var(--base);;
+}
+.project_button{
+    position: absolute;
+    left: 0px;
+    bottom: 60px;
+}
 .right {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .left {
@@ -25,15 +53,19 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
-    height: fit-content;
+    height: 320px;
+    justify-content: center;
+    margin-left: 40px;
 }
 
-.Sample_Content button{
- height: fit-content;
- width: fit-content;
- border: none;
- background: none;
+
+.Sample_Content button {
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    background: none;
 }
-.SSS{
+
+.SSS {
     margin: 220px 0;
 }

@@ -9,6 +9,9 @@ height: fit-content;
 text-wrap: wrap;
 line-height: 1.5;
 }
+.ppp{
+    margin-left: -140px;
+}
 .bold{
     font-weight: 1000;
     font-size: 48px;
@@ -16,6 +19,7 @@ line-height: 1.5;
     letter-spacing: -0.02em;
     color: var( --contr_base);
 }
+
 .transperent{
     font-weight: 800;
     width: 300px;
@@ -46,6 +50,8 @@ margin-top: 32px;
     margin-right: -245px;
     margin-top: 62px;
     margin-left: 32px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .header ul{
  display: flex;

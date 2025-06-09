@@ -52,6 +52,7 @@
 
 #w1.show {
     pointer-events: auto;
+    color: var(--contr_base) !important;
 }
 
 #w2.show {
@@ -69,3 +70,13 @@
 #w5.show {
     pointer-events: auto;
 }
+
+
+
+
+
+
+
+
+
+
