@@ -1,6 +1,9 @@
 import "../../assets/styles/main.css";
 import SkillSample from "../samples/SkillSample";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+AOS.init(); 
 const Skill = () => {
   const skill_list = [
     {
@@ -244,8 +247,9 @@ const Skill = () => {
   //   skill: `.skills_grid`,
   // });
   return (
-    <section className="skills container">
-      <h2 className="h222">
+    <section className="skills container" >
+      <h2 className="h222" data-aos="fade-up"
+        data-aos-duration="3000" >
         My<span>Skills</span>
       </h2>
       <div className="skills_grid">

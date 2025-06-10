@@ -1,13 +1,16 @@
 import "./Samples.css";
 import "../../assets/styles/main.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Project = ({ position, id, header, text,img }) => {
+AOS.init();
+const Project = ({ position, id, header, text, img }) => {
   return (
-    
-    <div className={`${position ? "right" : `left`} Main_text${id} SSS ` }>
-  
+
+    <div className={`${position ? "right" : `left`} Main_text${id} SSS `} data-aos={ position ? 'fade-right' : 'fade-left'}>
+
       <div>
-        <img src={img} alt="" className="projImg"/>
+        <img src={img} alt="" className="projImg" />
       </div>
       <div className="Sample_Content">
         <h2>0{id}</h2>

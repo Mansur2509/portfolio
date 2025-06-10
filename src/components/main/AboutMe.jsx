@@ -1,5 +1,9 @@
 import "../../assets/styles/main.css";
 import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 const AboutMe = () => {
   useEffect(() => {
     class FaceMove1 {
@@ -10,8 +14,8 @@ const AboutMe = () => {
       }
       moveItems = (e) => {
         const maxOffset = 5;
-// console.log((window.innerHeight - e.pageY + 440));
-// console.log(window.innerHeight);
+        // console.log((window.innerHeight - e.pageY + 440));
+        // console.log(window.innerHeight);
         this.guy_face.forEach((el) => {
           const speed = parseFloat(el.getAttribute("dataSpeed")) || 1;
           let X = -(1440 - e.pageX * speed) / 50;
@@ -40,7 +44,7 @@ const AboutMe = () => {
         viewBox="0 0 530 572"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="AboutMeSvg"
+        className="AboutMeSvg" data-aos="fade-right"
       >
         <path
           d="M515.447 0H14C7.37258 0 2 5.37261 2 12V513.447C2 520.074 7.37261 525.447 14 525.447H515.447C522.074 525.447 527.447 520.074 527.447 513.447V12C527.447 5.37258 522.074 0 515.447 0Z"
@@ -233,7 +237,7 @@ const AboutMe = () => {
           fill="var(--accent)"
         />
       </svg>
-      <article>
+      <article data-aos="fade-left">
         <h2 className="h222">
           About<span> Me</span>
         </h2>

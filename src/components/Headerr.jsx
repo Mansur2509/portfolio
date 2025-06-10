@@ -2,6 +2,10 @@ import React from "react";
 import '../assets/styles/header.css'
 import { useEffect } from "react";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 const Header = () => {
   useEffect(() => {
     class FaceMove {
@@ -25,7 +29,7 @@ const Header = () => {
     }
 
 
-const faceMove = new FaceMove({
+    const faceMove = new FaceMove({
       guy_face: ".face",
     });
 
@@ -35,9 +39,9 @@ const faceMove = new FaceMove({
   }, []);
 
   return (
-    <div className="header container">
+    <div className="header container" >
       <div className="header_content">
-        <svg
+        <svg data-aos-duration='3000' data-aos="fade-left"
           width="709"
           height="596"
           viewBox="0 0 889 596"
@@ -189,15 +193,15 @@ const faceMove = new FaceMove({
             </clipPath>
           </defs>
         </svg>
-        <div>
+        <div data-aos="fade-right" data-aos-duration='3000'> 
 
-          <h2>Hello I’am
+          <h2 data-aos="fade-right" data-aos-duration='3000'>Hello I’am
             <span className="bold">      Mansur Frontend</span>
             <span className="transperent">Developer </span>
             Based In
             <span className="bold">    Uzbekistan</span>
           </h2>
-          <p className="P1">Hi! My name is Mansur, I am a
+          <p className="P1"  data-aos="fade-right" data-aos-duration='2000'>Hi! My name is Mansur, I am a
             final-month student at Proweb Training Center,
             and I am passionate about creating user experiences.
             I specialize in front-end development, have experience

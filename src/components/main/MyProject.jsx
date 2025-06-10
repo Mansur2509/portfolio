@@ -1,8 +1,11 @@
 import "../../assets/styles/main.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Project from "../samples/ProjectSample";
 import { useState } from "react";
 
 const MyProject = () => {
+  AOS.init();
   const [count, setCount] = useState(3);
 
   const ProjectList = [
@@ -60,7 +63,7 @@ const MyProject = () => {
   return (
     <section className="MyProjectMain ">
       <div className="container s">
-        <h2 id="h2">My Projects</h2>
+        <h2 id="h2"  data-aos="fade-up">My Projects</h2>
         {ProjectList.slice(0, count).map((el) => (
           <Project
             key={el.id}

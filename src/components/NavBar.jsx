@@ -1,8 +1,15 @@
 import { useTheme } from "../provider/prowider";
 import "../assets/styles/nav.css";
 
+
 const Nav = ({ DownloadPDF }) => {
   const { toggleTheme } = useTheme();
+
+  function toggle() {
+    const burger = document.querySelector('.nav_list1')
+    burger.style.display == 'block' ? burger.style.display = 'none' : burger.style.display = 'block'
+    console.log('dsdsdsds')
+  }
 
   return (
     <nav className="nav container">
@@ -55,7 +62,7 @@ const Nav = ({ DownloadPDF }) => {
             </li>
             <li
               id="w5"
-              onClick={() => { window.scrollTo({ top:10000, behavior: "smooth" }) }}
+              onClick={() => { window.scrollTo({ top: 10000, behavior: "smooth" }) }}
             >
               Contact me
             </li>
@@ -94,6 +101,51 @@ const Nav = ({ DownloadPDF }) => {
               />
             </svg>
           </button>
+          <div className="BRG">
+
+            <div className="burger_btn_div">
+              <button className="burger" onClick={toggle}>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                  <path fill="var(--contr_base)" d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"></path>
+                </svg>
+              </button>
+            </div>
+            <ul className="nav_list1">
+              <li
+                id="w1"
+                onClick={() => {
+                  window.scrollTo({ top: 100, behavior: "smooth" })
+                }}
+              >
+                Personal
+              </li>
+              <li
+                id="w2"
+                onClick={() => { window.scrollTo({ top: 720, behavior: "smooth" }) }}
+              >
+                Skills
+              </li>
+              <li
+                id="w3"
+                onClick={() => { window.scrollTo({ top: 1440, behavior: "smooth" }) }}
+              >
+                About me
+              </li>
+              <li
+                id="w4"
+                onClick={() => { window.scrollTo({ top: 2150, behavior: "smooth" }) }}
+              >
+                Projects
+              </li>
+              <li
+                id="w5"
+                onClick={() => { window.scrollTo({ top: 10000, behavior: "smooth" }) }}
+              >
+                Contact me
+              </li>
+
+            </ul>
+          </div>
 
 
         </div>

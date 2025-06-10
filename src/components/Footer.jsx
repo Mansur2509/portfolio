@@ -1,16 +1,63 @@
 import '.././assets/styles/footer.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useState } from 'react';
+
+AOS.init();
 const Footer = () => {
+    const [count, setCount] = useState(1);
+    const [user, setUser] = useState('');
+    const [email, setEmail] = useState('');
+    const [website, setWebsite] = useState('');
+    const [message, setMessage] = useState('');
+
+
+    const Submit = (e) => {
+        setCount(count+1)
+        console.log(count);
+         e.preventDefault();
+        console.log({ user, email, website, message });
+        localStorage.setItem(`FormData${count}`, JSON.stringify(Formdata))
+    }
+    const Formdata = {
+        id: count,
+        user: user,
+        email: email,
+        website: website,
+        message: message
+    }
     return (
         <>
             <footer className='footer container'>
                 <section className='footer_top'>
 
-                    <form className='form'><input type="text" placeholder='Your name' />
-                        <input type="email" placeholder='Email' />
-                        <input type="url" placeholder='Your website (If exists)' />
-                        <input type="text" placeholder='How can I help?*    ' id='input_special' />
+                    <form className="form" onSubmit={Submit} data-aos="fade-right">
+                        <input
+                            type="text"
+                            placeholder="Your name"
+                            value={user}
+                            required
+                            onChange={(e) => setUser(e.target.value)} />
+                        <input type="email"
+                            placeholder="Email"
+                            value={email}
+                            required
+                            onChange={(e) => setEmail(e.target.value)} />
+                        <input
+                            type="url"
 
-                        <button type='submit' className='footer_btn'>
+                            placeholder="Your website (If exists)"
+                            value={website}
+                            onChange={(e) => setWebsite(e.target.value)} />
+                        <input
+                            type="text"
+                            required
+                            placeholder="How can I help?*"
+                            id="input_special"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)} />
+
+                        <button type='submit' className='footer_btn' >
                             <p >
                                 Get In Touch
                             </p>
@@ -48,7 +95,7 @@ const Footer = () => {
                             </li></a>
                         </ul>
                     </form>
-                    <section className='footer_content'>
+                    <section className='footer_content' data-aos='fade-left'>
                         <h2>Let’s<span className='span'> talk</span> for Something special</h2>
                         <p >I seek to push the limits of creativity to create high-engaging,
                             user-friendly, and memorable interactive experiences.</p>
@@ -56,7 +103,7 @@ const Footer = () => {
                         <h3>+998-901-06-86</h3>
                     </section>
                 </section></footer>
-            <section className='footer_botom '>
+            <section className='footer_botom ' >
                 <div className="container ft-content">
                     <svg
                         width="24"
@@ -84,5 +131,6 @@ const Footer = () => {
             </section>
         </>
     )
+
 }
 export default Footer;

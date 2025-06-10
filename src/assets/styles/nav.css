@@ -71,12 +71,29 @@
     pointer-events: auto;
 }
 
+.burger {}
 
+.burger_btn_div {
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-
-
-
-
-
+.BRG{
+    display: none;
+}
+.nav_list1 {
+    display: flex;
+    background-color: var(--contr_base);
+    color: var(--base);
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 680px;
+    transition: .5;
+    right: 5px;
+}
+.nav_list1 *{
+margin: 5px;
+}
